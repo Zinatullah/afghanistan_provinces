@@ -1,32 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1:3306
--- Generation Time: May 14, 2024 at 04:47 AM
--- Server version: 8.2.0
--- PHP Version: 8.2.13
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `aogc`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `z_provinces`
---
-
 DROP TABLE IF EXISTS `z_provinces`;
 CREATE TABLE IF NOT EXISTS `z_provinces` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -35,10 +6,6 @@ CREATE TABLE IF NOT EXISTS `z_provinces` (
   `timestamp` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Dumping data for table `z_provinces`
---
 
 INSERT INTO `z_provinces` (`id`, `name`, `name_en`, `timestamp`) VALUES
 (1, 'Badakhshan', ' بدخشان', '2024-05-14 04:31:59.966112'),
@@ -75,8 +42,4 @@ INSERT INTO `z_provinces` (`id`, `name`, `name_en`, `timestamp`) VALUES
 (32, 'Urozgan', ' اروزگان', '2024-05-14 04:32:00.557781'),
 (33, 'Wardak', ' وردک', '2024-05-14 04:32:00.573033'),
 (34, 'Zabul', ' زابل', '2024-05-14 04:32:00.587595');
-COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
